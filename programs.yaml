@@ -1,0 +1,191 @@
+# Seed list of finance master's programs (US / France / UK).
+# - urls: the program's main page(s); the crawler starts here and follows relevant links.
+# - extra_urls: pages/PDFs to always include (employment report, class profile...). Add them here
+#   when the crawler misses something — it's the most effective way to improve results.
+# - ranking: fill in by hand from the published FT Masters in Finance ranking (not scraped: paywalled).
+# Verify reachability with:  python -m pipeline.cli check-seeds
+
+programs:
+  # ---------------- France ----------------
+  - id: hec-mif
+    school: HEC Paris
+    program: MSc International Finance
+    country: FR
+    city: Jouy-en-Josas
+    urls: [https://www.hec.edu/en/master-s-programs/master-international-finance]
+  - id: essec-mif
+    school: ESSEC Business School
+    program: Master in Finance
+    country: FR
+    city: Cergy / Singapore
+    urls: [https://www.essec.edu/en/program/master-in-finance/]
+  - id: escp-msc-finance
+    school: ESCP Business School
+    program: MSc in Finance
+    country: FR
+    city: Paris / London
+    urls: [https://escp.eu/programmes/specialised-masters-MSc/MSc-finance]
+    ranking: "FT MiF 2026 #1"
+  - id: edhec-msc-fm
+    school: EDHEC Business School
+    program: MSc in Financial Markets
+    country: FR
+    city: Lille / Nice
+    urls: [https://master.edhec.edu/msc-financial-markets]
+  - id: edhec-msc-cfb
+    school: EDHEC Business School
+    program: MSc in Corporate Finance & Banking
+    country: FR
+    city: Lille / Nice
+    urls: [https://master.edhec.edu/msc-corporate-finance-banking]
+  - id: dauphine-203
+    school: Université Paris Dauphine-PSL
+    program: Master 203 Marchés Financiers
+    country: FR
+    city: Paris
+    urls: [https://dauphine.psl.eu/formations/masters/finance/m2-financial-markets]
+    extra_urls:
+      - https://dauphine.psl.eu/formations/masters/finance/m2-financial-markets/admissions
+      - https://dauphine.psl.eu/formations/masters/finance/m2-financial-markets/carrieres
+  - id: emlyon-msc-finance
+    school: emlyon business school
+    program: MSc in Finance
+    country: FR
+    city: Lyon / Paris
+    urls: [https://masters.em-lyon.com/en/msc-in-finance]
+  - id: skema-msc-fm
+    school: SKEMA Business School
+    program: MSc Financial Markets & Investments
+    country: FR
+    city: Paris / Sophia Antipolis
+    urls: [https://www.skema.edu/programmes/masters-of-science/msc-financial-markets-and-investments]
+
+  # ---------------- United Kingdom ----------------
+  - id: lbs-mif
+    school: London Business School
+    program: Masters in Finance (Full-time)
+    country: UK
+    city: London
+    urls: [https://www.london.edu/masters-degrees/masters-in-finance-full-time]
+  - id: lbs-mfa
+    school: London Business School
+    program: Master in Financial Analysis
+    country: UK
+    city: London
+    urls: [https://www.london.edu/masters-degrees/masters-in-financial-analysis]
+    extra_urls:
+      - https://www.london.edu/masters-degrees/masters-in-financial-analysis/apply
+      - https://www.london.edu/masters-degrees/masters-in-financial-analysis/career-impact
+      - https://www.london.edu/masters-degrees/masters-in-financial-analysis/who-attends
+  - id: oxford-msc-fe
+    school: Saïd Business School, University of Oxford
+    program: MSc Financial Economics
+    country: UK
+    city: Oxford
+    urls: [https://www.sbs.ox.ac.uk/programmes/degrees/msc-financial-economics]
+  - id: cambridge-mfin
+    school: Cambridge Judge Business School
+    program: Master of Finance (MFin)
+    country: UK
+    city: Cambridge
+    urls: [https://www.jbs.cam.ac.uk/masters-degrees/master-of-finance/]
+  - id: cambridge-mphil-finance
+    school: Cambridge Judge Business School
+    program: MPhil in Finance
+    country: UK
+    city: Cambridge
+    urls: [https://www.jbs.cam.ac.uk/phd-research-masters/mphil-finance/]
+    extra_urls:
+      - https://www.jbs.cam.ac.uk/phd-research-masters/mphil-finance/apply/
+      - https://www.jbs.cam.ac.uk/phd-research-masters/mphil-finance/class-profile/
+  - id: lse-msc-finance
+    school: London School of Economics
+    program: MSc Finance
+    country: UK
+    city: London
+    urls: [https://www.lse.ac.uk/study-at-lse/graduate/msc-finance-full-time]
+  - id: imperial-msc-finance
+    school: Imperial College Business School
+    program: MSc Finance
+    country: UK
+    city: London
+    urls: [https://www.imperial.ac.uk/business-school/programmes/msc-finance/]
+  - id: warwick-msc-finance
+    school: Warwick Business School
+    program: MSc Finance
+    country: UK
+    city: Coventry
+    urls: [https://www.wbs.ac.uk/courses/postgraduate/finance/]
+  - id: bayes-msc-finance
+    school: Bayes Business School (City St George's)
+    program: MSc Finance
+    country: UK
+    city: London
+    urls: [https://www.bayes.citystgeorges.ac.uk/faculties-and-research/masters/msc-finance]
+
+  # ---------------- United States ----------------
+  - id: mit-mfin
+    school: MIT Sloan School of Management
+    program: Master of Finance (MFin)
+    country: US
+    city: Cambridge, MA
+    urls: [https://mitsloan.mit.edu/mfin]
+  - id: princeton-mfin
+    school: Princeton University (Bendheim Center for Finance)
+    program: Master in Finance
+    country: US
+    city: Princeton, NJ
+    urls: [https://bcf.princeton.edu/master-in-finance/]
+  - id: columbia-msfe
+    school: Columbia Business School
+    program: MS in Financial Economics
+    country: US
+    city: New York, NY
+    urls: [https://academics.gsb.columbia.edu/msfe]
+  - id: cmu-mscf
+    school: Carnegie Mellon University (Tepper)
+    program: MS in Computational Finance
+    country: US
+    city: Pittsburgh / New York
+    urls: [https://www.cmu.edu/mscf/]
+  - id: ucla-mfe
+    school: UCLA Anderson School of Management
+    program: Master of Financial Engineering
+    country: US
+    city: Los Angeles, CA
+    urls: [https://www.anderson.ucla.edu/degrees/master-of-financial-engineering]
+  - id: berkeley-mfe
+    school: UC Berkeley Haas School of Business
+    program: Master of Financial Engineering
+    country: US
+    city: Berkeley, CA
+    urls: [https://haas.berkeley.edu/mfe/]
+  - id: vanderbilt-msf
+    school: Vanderbilt Owen Graduate School of Management
+    program: MS in Finance
+    country: US
+    city: Nashville, TN
+    urls: [https://business.vanderbilt.edu/masters-in-finance/]
+    extra_urls:
+      - https://business.vanderbilt.edu/masters-in-finance/admissions/
+      - https://business.vanderbilt.edu/masters-in-finance/admissions/tuition-financial-aid/
+      - https://business.vanderbilt.edu/masters-in-finance/class-profile/
+      - https://business.vanderbilt.edu/news/2026/01/29/vanderbilt-ms-finance-class-of-2025-delivers-strong-employment-outcomes/
+  - id: washu-msf
+    school: WashU Olin Business School
+    program: MS in Finance
+    country: US
+    city: St. Louis, MO
+    urls: [https://olin.wustl.edu/programs/specialized-masters/ms-in-finance/index.php]
+  - id: usc-msf
+    school: USC Marshall School of Business
+    program: MS in Finance
+    country: US
+    city: Los Angeles, CA
+    urls: [https://www.marshall.usc.edu/programs/specialized-masters-programs/master-science-finance]
+  - id: jhu-msf
+    school: Johns Hopkins Carey Business School
+    program: MS in Finance
+    country: US
+    city: Baltimore / Washington DC
+    urls: [https://carey.jhu.edu/programs/master-science-programs/ms-finance]
