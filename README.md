@@ -65,5 +65,4 @@ pytest                                          # tests (mocked LLM, no network,
   https://aistudio.google.com/rate-limit.
 
 ## Built with AI
-This project was developed with [Claude Code](https://claude.com/claude-code), Anthropic's AI coding assistant, as a
-pair programmer.
+This project was developed using [Claude Code](https://claude.com/claude-code).
